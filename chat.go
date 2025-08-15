@@ -8,9 +8,9 @@ import (
 	"io"
 	"net/http"
 
-	openai "github.com/meguminnnnnnnnn/go-openai/internal"
+	openai "github.com/darkyzhou/go-openai/internal"
 
-	"github.com/meguminnnnnnnnn/go-openai/jsonschema"
+	"github.com/darkyzhou/go-openai/jsonschema"
 )
 
 // Chat message role defined by the OpenAI API.
@@ -94,6 +94,11 @@ type ChatMessageVideoURL struct {
 	URL string `json:"url,omitempty"`
 }
 
+type ChatMessageFileURL struct {
+	URL      string `json:"url,omitempty"`
+	MIMEType string `json:"mime_type,omitempty"`
+}
+
 type ChatMessagePartType string
 
 const (
@@ -101,6 +106,7 @@ const (
 	ChatMessagePartTypeImageURL   ChatMessagePartType = "image_url"
 	ChatMessagePartTypeInputAudio ChatMessagePartType = "input_audio"
 	ChatMessagePartTypeVideoURL   ChatMessagePartType = "video_url"
+	ChatMessagePartTypeFileURL    ChatMessagePartType = "file_url"
 )
 
 type ChatMessagePart struct {
@@ -109,6 +115,7 @@ type ChatMessagePart struct {
 	ImageURL   *ChatMessageImageURL   `json:"image_url,omitempty"`
 	InputAudio *ChatMessageInputAudio `json:"input_audio,omitempty"`
 	VideoURL   *ChatMessageVideoURL   `json:"video_url,omitempty"`
+	FileURL    *ChatMessageFileURL    `json:"file_url,omitempty"`
 }
 
 type ChatCompletionMessage struct {

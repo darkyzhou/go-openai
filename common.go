@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"reflect"
 
-	openai "github.com/meguminnnnnnnnn/go-openai/internal"
+	openai "github.com/darkyzhou/go-openai/internal"
 )
 
 // common.go defines common types used throughout the OpenAI API.

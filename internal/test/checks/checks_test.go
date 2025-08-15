@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/meguminnnnnnnnn/go-openai/internal/test/checks"
+	"github.com/darkyzhou/go-openai/internal/test/checks"
 )
 
 func TestChecksSuccessPaths(t *testing.T) {

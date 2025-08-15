@@ -3,8 +3,8 @@ package openai_test
 import (
 	"testing"
 
-	openai "github.com/meguminnnnnnnnn/go-openai/internal"
-	"github.com/meguminnnnnnnnn/go-openai/internal/test/checks"
+	openai "github.com/darkyzhou/go-openai/internal"
+	"github.com/darkyzhou/go-openai/internal/test/checks"
 )
 
 func TestJSONMarshaller_Normal(t *testing.T) {

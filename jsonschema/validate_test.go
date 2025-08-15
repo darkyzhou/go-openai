@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/meguminnnnnnnnn/go-openai/jsonschema"
+	"github.com/darkyzhou/go-openai/jsonschema"
 )
 
 func Test_Validate(t *testing.T) {

@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"testing"
 
-	openai "github.com/meguminnnnnnnnn/go-openai/internal"
-	"github.com/meguminnnnnnnnn/go-openai/internal/test/checks"
+	openai "github.com/darkyzhou/go-openai/internal"
+	"github.com/darkyzhou/go-openai/internal/test/checks"
 	"github.com/stretchr/testify/assert"
 )
 

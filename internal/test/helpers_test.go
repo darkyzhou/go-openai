@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	internaltest "github.com/meguminnnnnnnnn/go-openai/internal/test"
+	internaltest "github.com/darkyzhou/go-openai/internal/test"
 )
 
 func TestCreateTestFile(t *testing.T) {

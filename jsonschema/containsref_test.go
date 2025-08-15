@@ -3,7 +3,7 @@ package jsonschema_test
 import (
 	"testing"
 
-	"github.com/meguminnnnnnnnn/go-openai/jsonschema"
+	"github.com/darkyzhou/go-openai/jsonschema"
 )
 
 // SelfRef struct used to produce a self-referential schema.
